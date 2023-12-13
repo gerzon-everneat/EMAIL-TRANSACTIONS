@@ -9,25 +9,111 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <style></style>
+
     <title>Document</title>
+    <style>
+      .name-container {
+        font-weight: 400;
+        padding: 0px;
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+        line-height: 130%;
+      }
+      header h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding: 20px 0px 35px 0px;
+        size: 24px;
+        color: rgba(23, 23, 40, 1);
+        background-color: white;
+        line-height: 100%;
+      }
+      .card-container {
+        display: flex;
+        gap: 40px;
+        max-width: 521px;
+      }
+      .card-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 70px;
+        align-items: center;
+      }
+      .card-content-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(30, 30, 30, 1);
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        gap: 24px;
+      }
+      .social-button-container {
+        display: flex;
+        gap: 18px;
+      }
+      .footer-text {
+        color: rgba(54, 59, 76, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .verification-code-container {
+        padding: 30px 50px;
+        top: 438px;
+        left: 52px;
+        border-radius: 24px;
+        background: rgba(241, 253, 195, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .verification-code {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 83px;
+        letter-spacing: 0.3em;
+        text-align: center;
+      }
+      .sub-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(75, 80, 100, 1);
+      }
+      .verify-button {
+        top: 668px;
+        left: 217px;
+        padding: 16px, 56px, 16px, 56px;
+        border-radius: 20px;
+        border: 1px;
+        gap: 4px;
+        width: 266px;
+        height: 58px;
+        background-color: rgba(0, 0, 0, 1);
+        color: white;
+      }
+    </style>
   </head>
   <body style="font-family: 'Plus Jakarta Sans', sans-serif">
     <header>
-      <h1
-        style="
-          text-align: center;
-          padding: 10px 0;
-          size: 24px;
-          color: rgba(23, 23, 40, 1);
-          background-color: white;
-        "
-      >
-        neatlist
-      </h1>
+      <h1 style="">neatlist</h1>
     </header>
     <main>
-      <div style="background: rgba(224, 255, 102, 0.15); padding: 40px">
+      <div style="background: rgba(224, 255, 102, 0.15); padding: 0px 40px">
         <div
           style="
             display: flex;
@@ -67,91 +153,21 @@
               </defs>
             </svg>
           </div>
-          <div>
-            <h2 style="font-weight: 400; padding: 0px; margin: 0">
-              Hi Name_here
-            </h2>
+          <div class="name-container">
+            <div>
+              <span>Hi Name_here</span>
+            </div>
+            <div>
+              <span style="font-weight: 700"> Welcome to Neatlist </span>
+            </div>
           </div>
           <div>
-            <h2 style="font-weight: 700; padding: 0px; margin: 0">
-              Welcome to Neatlist
-            </h2>
-          </div>
-          <div>
-            <span
-              style="
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: rgba(75, 80, 100, 1);
-              "
-              >Verify your email to get started</span
-            >
+            <span class="sub-text">Verify your email to get started</span>
           </div>
           <!--  -->
           <div style="position: relative">
-            <div
-              style="
-                width: 596px;
-                height: 148px;
-                top: 438px;
-                left: 52px;
-                border-radius: 24px;
-                background: rgba(241, 253, 195, 1);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <span
-                style="
-                  font-size: 64px;
-                  font-weight: 700;
-                  line-height: 83px;
-                  letter-spacing: 0.3em;
-                  text-align: center;
-                "
-                >987995</span
-              >
-            </div>
-            <div
-              style="
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: flex;
-                align-items: center;
-                padding: 3rem;
-              "
-            >
-              <svg
-                width="47"
-                height="47"
-                viewBox="0 0 47 47"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="23.5" cy="23.5" r="23.5" fill="white" />
-                <g clip-path="url(#clip0_9732_2386)">
-                  <path
-                    d="M26 14H15C13.9 14 13 14.9 13 16V29C13 29.55 13.45 30 14 30C14.55 30 15 29.55 15 29V17C15 16.45 15.45 16 16 16H26C26.55 16 27 15.55 27 15C27 14.45 26.55 14 26 14ZM30 18H19C17.9 18 17 18.9 17 20V34C17 35.1 17.9 36 19 36H30C31.1 36 32 35.1 32 34V20C32 18.9 31.1 18 30 18ZM29 34H20C19.45 34 19 33.55 19 33V21C19 20.45 19.45 20 20 20H29C29.55 20 30 20.45 30 21V33C30 33.55 29.55 34 29 34Z"
-                    fill="#323232"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_9732_2386">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(11 13)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+            <div class="verification-code-container">
+              <span class="verification-code">987995</span>
             </div>
           </div>
           <div>
@@ -172,21 +188,7 @@
             <!-- link here -->
 
             <a href="">
-              <button
-                href=""
-                style="
-                  top: 668px;
-                  left: 217px;
-                  padding: 16px, 56px, 16px, 56px;
-                  border-radius: 20px;
-                  border: 1px;
-                  gap: 4px;
-                  width: 266px;
-                  height: 58px;
-                  background-color: rgba(0, 0, 0, 1);
-                  color: white;
-                "
-              >
+              <button class="verify-button">
                 <span
                   style="
                     font-size: 20px;
@@ -194,6 +196,7 @@
                     line-height: 26px;
                     letter-spacing: 0em;
                     text-align: left;
+                    cursor: pointer;
                   "
                   >Verify your email</span
                 >
@@ -201,32 +204,16 @@
             </a>
           </div>
           <div>
-            <span
-              style="
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: rgba(75, 80, 100, 1);
-              "
+            <span class="sub-text"
               >If you didn't create an account in Neatlist , please ignore this
               message</span
             >
           </div>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 40px;
-          margin: 70px;
-          align-items: center;
-        "
-      >
+      <div class="card-container-wrapper">
         <!-- cards below -->
-        <div style="display: flex; gap: 40px; max-width: 521px">
+        <div class="card-container">
           <div>
             <svg
               width="78"
@@ -255,22 +242,14 @@
           </div>
           <div>
             <h3>Fill up your Schedule</h3>
-            <span
-              style="
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: rgba(30, 30, 30, 1);
-              "
+            <span class="card-content-text"
               >Connect with new clients looking for your skills - expanding your
               reach beyond what's possible alone.</span
             >
           </div>
         </div>
         <!-- cards below -->
-        <div style="display: flex; gap: 40px; max-width: 521px">
+        <div class="card-container">
           <div>
             <svg
               width="78"
@@ -302,23 +281,15 @@
             </svg>
           </div>
           <div>
-            <h3>Grow your income</h3>
-            <span
-              style="
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: rgba(30, 30, 30, 1);
-              "
+            <h3 class="card-content-header">Grow your income</h3>
+            <span class="card-content-text"
               >Easily book appointments to hit your earning goals each
               week.</span
             >
           </div>
         </div>
         <!-- cards below -->
-        <div style="display: flex; gap: 40px; max-width: 521px">
+        <div class="card-container">
           <div>
             <svg
               width="78"
@@ -353,15 +324,7 @@
           </div>
           <div>
             <h3>Get matched with new clients</h3>
-            <span
-              style="
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0em;
-                text-align: center;
-                color: rgba(30, 30, 30, 1);
-              "
+            <span class="card-content-text"
               >Showcase your expertise to command higher rates and and earn what
               your skills deserve.</span
             >
@@ -369,19 +332,14 @@
         </div>
       </div>
     </main>
-    <footer
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 70px;
-        gap: 24px;
-      "
-    >
+    <footer class="footer text">
       <!-- social button container below -->
-      <div style="display: flex; gap: 18px">
+      <div class="social-button-container">
         <!-- social link with icon -->
-        <a href="https://www.facebook.com/neatlist">
+        <a
+          href="https://www.facebook.com/neatlist"
+          style="display: inline-block"
+        >
           <div>
             <svg
               width="30"
@@ -404,7 +362,10 @@
           </div>
         </a>
         <!-- social link with icon -->
-        <a href="https://www.instagram.com/neatlist.co">
+        <a
+          href="https://www.instagram.com/neatlist.co"
+          style="display: inline-block"
+        >
           <div>
             <svg
               width="30"
@@ -428,7 +389,10 @@
           </div>
         </a>
         <!-- social link with icon -->
-        <a href="https://www.linkedin.com/company/neatlist">
+        <a
+          href="https://www.linkedin.com/company/neatlist"
+          style="display: inline-block"
+        >
           <div>
             <svg
               width="30"
@@ -452,42 +416,28 @@
           </div>
         </a>
         <!-- social link with icon -->
-        <a href="">
+        <a href="https://www.neatlist.co">
           <div>
             <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect
-                x="0.40625"
-                width="29.1352"
-                height="29.1352"
-                rx="14.5676"
-                fill="#6C6C6C"
-              />
+              <rect width="32" height="32" rx="16" fill="#6C6C6C" />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M20.9764 7.63683C19.3708 6.02988 17.2355 5.14446 14.9605 5.14355C10.273 5.14355 6.45795 8.95714 6.45607 13.6447C6.45545 15.143 6.84707 16.6057 7.59125 17.8949L6.38477 22.3005L10.8931 21.1183C12.1352 21.7955 13.5338 22.1525 14.9571 22.1531H14.9606C19.6476 22.1531 23.463 18.339 23.4649 13.6515C23.4658 11.3798 22.582 9.24378 20.9764 7.63683ZM14.9606 20.7172H14.9577C13.6894 20.7167 12.4453 20.3761 11.3601 19.7322L11.1019 19.5791L8.42667 20.2807L9.14076 17.6731L8.97267 17.4058C8.26511 16.2807 7.89139 14.9803 7.89195 13.6452C7.8935 9.74912 11.0644 6.57943 14.9634 6.57943C16.8514 6.58015 18.6261 7.31612 19.9607 8.65176C21.2952 9.98741 22.0298 11.7628 22.0291 13.6509C22.0274 17.5473 18.8565 20.7172 14.9606 20.7172ZM18.8378 15.425C18.6253 15.3186 17.5806 14.8047 17.3858 14.7338C17.191 14.6629 17.0494 14.6275 16.9077 14.8402C16.766 15.0528 16.3588 15.5313 16.2348 15.6731C16.1109 15.8149 15.9869 15.8326 15.7744 15.7262C15.5619 15.6199 14.8773 15.3956 14.0656 14.6719C13.4339 14.1087 13.0074 13.413 12.8835 13.2003C12.7595 12.9876 12.8703 12.8727 12.9767 12.7668C13.0723 12.6716 13.1892 12.5187 13.2954 12.3946C13.4016 12.2706 13.4371 12.182 13.5079 12.0402C13.5787 11.8984 13.5433 11.7743 13.4902 11.668C13.4371 11.5617 13.0121 10.5161 12.835 10.0908C12.6625 9.67656 12.4873 9.73261 12.3569 9.72612C12.2331 9.71996 12.0913 9.71864 11.9497 9.71864C11.808 9.71864 11.5778 9.77182 11.383 9.98446C11.1882 10.1971 10.6393 10.7111 10.6393 11.7566C10.6393 12.8022 11.4007 13.8123 11.507 13.9541C11.6132 14.0959 13.0053 16.2416 15.137 17.1617C15.644 17.3806 16.0398 17.5112 16.3484 17.6092C16.8574 17.7708 17.3207 17.748 17.6868 17.6933C18.0951 17.6324 18.944 17.1794 19.1211 16.6832C19.2982 16.187 19.2982 15.7617 19.2451 15.6731C19.1919 15.5845 19.0503 15.5313 18.8378 15.425Z"
-                fill="white"
+                d="M16 25C20.1926 25 23.7156 22.1332 24.7157 18.2529M16 25C11.8074 25 8.28442 22.1332 7.2843 18.2529M16 25C18.4853 25 20.5 20.9706 20.5 16C20.5 11.0294 18.4853 7 16 7M16 25C13.5147 25 11.5 20.9706 11.5 16C11.5 11.0294 13.5147 7 16 7M16 7C19.3652 7 22.299 8.84694 23.8431 11.5824M16 7C12.6348 7 9.70099 8.84694 8.15692 11.5824M23.8431 11.5824C21.7397 13.4004 18.9983 14.5 16 14.5C13.0017 14.5 10.2603 13.4004 8.15692 11.5824M23.8431 11.5824C24.5797 12.8874 25 14.3946 25 16C25 16.778 24.9013 17.5329 24.7157 18.2529M24.7157 18.2529C22.1334 19.6847 19.1619 20.5 16 20.5C12.8381 20.5 9.86662 19.6847 7.2843 18.2529M7.2843 18.2529C7.09871 17.5329 7 16.778 7 16C7 14.3946 7.42032 12.8874 8.15692 11.5824"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
             </svg>
           </div>
         </a>
       </div>
-      <div
-        style="
-          color: rgba(54, 59, 76, 1);
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 28px;
-          letter-spacing: 0em;
-          text-align: left;
-        "
-      >
+      <div class="footer-text">
         <span>© Copyright 2023, All Rights Reserved by Neatlist </span>
       </div>
     </footer>
